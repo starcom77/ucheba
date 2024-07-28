@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/main.css">
+    <link rel="stylesheet" href="/CSS/fonts.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/CSS/swiper-bundle.min.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header_wrapper">
+                <div class="menu_wrapper">
+                    <div class="menu-logo">
+                        <p>ROBO.SCHOOL</p>
+                    </div>
+                    <div class="menu-center_menu">
+                        <a href="#">
+                            <p>О школе</p>
+                        </a>
+                        <a href="#">
+                            <p>Тренеры</p>
+                        </a>
+                        <a href="#">
+                            <p>Стоимость</p>
+                        </a>
+                    </div>
+                    <div class="menu-phone">
+                        <a href="#">+7 800 000 11 22</a>
+                    </div>
+                </div>
+                <div class="header-main">
+                    <div class="robo_sch">
+                        <p class="robo_title">ROBO SCHOOL</p>
+                        <p class="sch-descript">Курсы повышения квалификации по робототехнике для педагогов начальной
+                            школы</p>
+                        <a href="#" class="button">Записаться на курс</a>
+                    </div>
+                    <div class="robo-img">
+                        <img src="/img/Group 211.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="section_stat">
+        <div class="container">
+            <div class="stat_wrapper">
+                <div class="robo_text_wrapper">
+                    <p><span>Robo School</span> – учреждение для формирования кадрового педагогического резерва в сфере
+                        робототехникии программирования</p>
+                </div>
+
+                <div class="numbs">
+                    <div class="numbs_10">
+                        <p class="u10">10</p>
+                        <p class="t10">УМК по различным направлениям по робототехнике</p>
+                    </div>
+                    <div class="numbs_20">
+                        <p class="u20">20</p>
+                        <p class="t20">Школ, в которых запущена робототехника</p>
+                    </div>
+                    <div class="numbs_100">
+                        <p class="u100">100</p>
+                        <p class="t100">Педагогов прошедших курсы повышения квалификации</p>
+                    </div>
+                    <div class="numbs_10000">
+                        <p class="u10000">10000</p>
+                        <p class="t1000">Обученных детей на базе собственных центров</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="aftr_kurs">
+        <div class="container">
+            <div class="aftr_kurs-wrapper">
+                <p class="main-title">Что вы получите после курса</p>
+                <div class="kurs-descrypt">
+                    <div class="kurs-crards">
+                        <p class="head">Удостоверение</p>
+                        <p class="descr">Дающее право преподавать робототехнику для детей 6-12 лет в образовательных
+                            учреждениях</p>
+                    </div>
+                    <div class="kurs-crards">
+                        <p class="head">Знания</p>
+                        <p class="descr">По основам разработки учебно-методических комплексов
+                            по робототехнике и программированию</p>
+                    </div>
+                    <div class="kurs-crards">
+                        <div class="title-wrapper">
+                            <p class="head">Практику</p>
+                            <!-- Подсказка по ховеру -->
+                            <div class="tooltip"><img src="/img/icon.png" alt="">
+                                <span class="tooltiptext">При наличии свободных мест</span>
+                            </div>
+                            <!-- -------------------- -->
+                        </div>
+                        <p class="descr">Возможность пройти практику по преподаванию робототехники на базе R:ED LAB (в
+                            оффлайн или онлайн формате)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="section_swiper">
+        <div class="container">
+            <div class="swiper_wrapper">
+                <p>Профессиональные тренеры</p>
+                <div class="swiper_container">
+                    <!-- Начало свайпера -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img src="/img/1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="/img/2.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="/img/3.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="/img/4.jpg" alt=""></div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-scrollbar"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"><img src="/img/Iconly/Bold/Arrow - Right Circle-1.svg" alt=""></div>
+                        <div class="swiper-button-next"><img src="/img/Iconly/Bold/Arrow - Right Circle.svg" alt=""></div>
+                        <script src="/JS/swiper-bundle.min.js"></script>
+                        <script>
+                            //скрипт свайпера
+                            const swiper = new Swiper('.swiper', {
+                                // Optional parameters
+                                direction: 'horizontal',
+                                loop: true,
+                                spaceBetween: 30,
+                                slidesPerView: 3,
+                                freeMode: true,
+                                // Navigation arrows
+                                navigation: {
+                                    nextEl: '.swiper-button-next',
+                                    prevEl: '.swiper-button-prev',
+                                },
+
+                                // And if we need scrollbar
+                                scrollbar: {
+                                    el: '.swiper-scrollbar',
+                                },
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
