@@ -118,56 +118,92 @@
         </div>
     </section>
 
-
+    
 
     <section class="section_swiper">
         <div class="container">
             <div class="swiper_wrapper">
-                <p>Профессиональные тренеры</p>
+                <p class="swiper-title">Профессиональные тренеры</p>
                 <div class="swiper_container">
                     <!-- Начало свайпера -->
                     <div class="swiper">
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide"><img src="/img/1.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="/img/2.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="/img/3.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="/img/4.jpg" alt=""></div>
+                            <div class="swiper-slide">
+                                <img src="/img/1.svg" alt="">
+                                <div class="slide-text">
+                                    <p class="slider-people_name">Ирина Лайм</p>
+                                    <p class="profi">Преподаватель по робототехнике</p>
+                                    <a href="#">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/img/2.svg" alt="">
+                                <div class="slide-text">
+                                    <p class="slider-people_name">Марина Орлова </p>
+                                    <p class="profi">Преподаватель по робототехнике</p>
+                                    <a href="#">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/img/3.svg" alt="">
+                                <div class="slide-text">
+                                    <p class="slider-people_name">Максим Петров</p>
+                                    <p class="profi">Преподаватель по программированию</p>
+                                    <a href="#">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/img/4.svg" alt="">
+                                <div class="slide-text">
+                                    <p class="slider-people_name">Константин Назаров</p>
+                                    <p class="profi">Преподаватель по робототехнике</p>
+                                    <a href="#">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/img/5.svg" alt="">
+                                <div class="slide-text">
+                                    <p class="slider-people_name">Лиза Весенняя</p>
+                                    <p class="profi">Преподаватель по программированию</p>
+                                    <a href="#">Подробнее</a>
+                                </div>
+                            </div>
                         </div>
                         <!-- If we need pagination -->
                         <div class="swiper-scrollbar"></div>
 
                         <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"><img src="/img/Iconly/Bold/Arrow - Right Circle-1.svg" alt=""></div>
-                        <div class="swiper-button-next"><img src="/img/Iconly/Bold/Arrow - Right Circle.svg" alt=""></div>
-                        <script src="/JS/swiper-bundle.min.js"></script>
-                        <script>
-                            //скрипт свайпера
-                            const swiper = new Swiper('.swiper', {
-                                // Optional parameters
-                                direction: 'horizontal',
-                                loop: true,
-                                spaceBetween: 30,
-                                slidesPerView: 3,
-                                freeMode: true,
-                                // Navigation arrows
-                                navigation: {
-                                    nextEl: '.swiper-button-next',
-                                    prevEl: '.swiper-button-prev',
-                                },
-
-                                // And if we need scrollbar
-                                scrollbar: {
-                                    el: '.swiper-scrollbar',
-                                },
-                            });
-                        </script>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                       
                     </div>
                 </div>
             </div>
         </div>
+        <script src="/JS/swiper-bundle.min.js"></script>
+        <script>
+            //скрипт свайпера
+            const swiper = new Swiper('.swiper', {
+                // Optional parameters
+                spaceBetween: 40,
+                slidesPerView: 3.8,
+                
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                // And if we need scrollbar
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+            });
+        </script>
     </section>
+    
 </body>
 
 </html>
